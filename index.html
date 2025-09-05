@@ -1,83 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brizon Agency</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brizon Agency — Marketing para Clínicas de Estética</title>
+  <meta name="description" content="Brizon Agency impulsa clínicas de estética con marketing digital de alto impacto: anuncios, SEO local, contenidos y automatizaciones.">
+  <meta name="theme-color" content="#1a1a40">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-yH7xdFyl1bQkK7XG8c7mP1e8h3o7rCwq0j3l8bF2YyqU0v7r3Qf2z7Jd9G1H2tqzH1v1bC+J9y5C5nJb1n3GxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="navbar">
-    <div class="logo-container">
-      <img src="assets/logo.png" alt="Brizon Agency Logo" class="logo">
-      <span class="agency-name">Brizon Agency</span>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#inicio" class="brand" aria-label="Brizon Agency">
+        <img src="assets/logo.png" alt="Logo Brizon Agency" class="logo">
+        <span>Brizon Agency</span>
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#casos">Casos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="cta-wrap">
+        <a class="btn ghost" href="#contacto"><i class="fa-solid fa-envelope"></i> Contactar</a>
+        <a class="btn" href="tel:+34603500843"><i class="fa-solid fa-phone"></i> Llamar Ahora</a>
+      </div>
+      <button class="hamburger" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#casos">Casos</a></li>
-        <li><a href="#testimonios">Testimonios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="inicio" class="hero">
-    <h1>Impulsamos el crecimiento de tu clínica estética</h1>
-    <p>En Brizon Agency llevamos tu marca al siguiente nivel con estrategias digitales personalizadas.</p>
-    <a href="#contacto" class="btn">Contáctanos</a>
-  </section>
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero section">
+      <div class="hero-bg"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="kicker">Especialistas en clínicas de estética</p>
+          <h1>Marketing que <span class="gradient-text">deslumbra</span> y llena tu agenda.</h1>
+          <p class="lead">Estrategias creativas con resultados medibles: campañas en Meta & Google, SEO local, contenidos y automatizaciones que convierten interesados en pacientes.</p>
+          <div class="actions">
+            <a class="btn lg" href="#contacto"><i class="fa-solid fa-envelope"></i> Agenda tu diagnóstico</a>
+            <a class="btn lg ghost" href="tel:+34603500843"><i class="fa-solid fa-phone"></i> Llamar Ahora</a>
+          </div>
+          <div class="badges">
+            <span class="chip"><i class="fa-solid fa-shield-heart"></i> Cumplimiento RGPD</span>
+            <span class="chip"><i class="fa-solid fa-bullseye"></i> Enfoque en reservas</span>
+            <span class="chip"><i class="fa-solid fa-chart-line"></i> Reportes claros</span>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <div class="bullet"><span class="dot"></span><div><strong>+212%</strong> más reservas promedio en 90 días.</div></div>
+          <div class="bullet"><span class="dot"></span><div><strong>-37%</strong> coste por cita (CPA) con creatividades validadas.</div></div>
+          <div class="bullet"><span class="dot"></span><div>Playbooks por tratamiento: <em>láser, facial, corporal, botox</em>.</div></div>
+        </div>
+      </div>
+      <img class="hero-watermark" src="assets/logo.png" alt="Marca de agua Brizon Agency">
+    </section>
 
-  <!-- Servicios -->
-  <section id="servicios" class="section">
-    <h2>Servicios</h2>
-    <div class="services-grid">
-      <div class="card">Visibilidad en redes sociales</div>
-      <div class="card">Campañas publicitarias efectivas</div>
-      <div class="card">Posicionamiento SEO</div>
-      <div class="card">Gestión de reputación online</div>
+    <!-- SOBRE -->
+    <section id="sobre" class="about section">
+      <div class="container grid-2">
+        <div class="reveal">
+          <h2>Quiénes somos</h2>
+          <p>Somos una agencia creativa enfocada 100% en clínicas de estética. Unimos datos + diseño para crear experiencias que enamoran y campañas con retorno real. Nuestro objetivo es simple: <strong>más pacientes con el menor coste por cita posible</strong>.</p>
+          <ul class="list muted">
+            <li><i class="fa-solid fa-vial-circle-check"></i> Cumplimos normativa sanitaria y de publicidad.</li>
+            <li><i class="fa-solid fa-flask"></i> Test A/B constante de mensajes y creatividades.</li>
+            <li><i class="fa-solid fa-plug-circle-bolt"></i> Integraciones con WhatsApp, Calendly, Meta y Google.</li>
+          </ul>
+        </div>
+        <div class="about-card card reveal">
+          <h3>Datos rápidos</h3>
+          <div class="quick grid-3">
+            <div><span class="stat" data-count="120">0</span><small>Campañas</small></div>
+            <div><span class="stat" data-count="90">0</span><small>Días a impacto</small></div>
+            <div><span class="stat" data-count="35">0</span><small>Clínicas</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="services section">
+      <div class="container">
+        <h2 class="reveal">Servicios</h2>
+        <p class="muted reveal">Soluciones que combinan creatividad y performance.</p>
+        <div class="cards grid-4">
+          <article class="card reveal">
+            <i class="fa-solid fa-bullseye icon"></i>
+            <h3>Publicidad Meta & Google</h3>
+            <p>Campañas orientadas a reservas para tratamientos estrella: botox, láser, facial, corporal.</p>
+          </article>
+          <article class="card reveal">
+            <i class="fa-solid fa-globe icon"></i>
+            <h3>SEO Local & Fichas</h3>
+            <p>Aparece cuando te buscan. Optimización de Google Business Profile y reseñas.</p>
+          </article>
+          <article class="card reveal">
+            <i class="fa-solid fa-wand-magic-sparkles icon"></i>
+            <h3>Creatividades & Contenido</h3>
+            <p>Reels, imágenes y copies que cumplen normativa y convierten.</p>
+          </article>
+          <article class="card reveal">
+            <i class="fa-solid fa-sitemap icon"></i>
+            <h3>Automatizaciones & WhatsApp</h3>
+            <p>Flujos de confirmación, recordatorios y recuperación de interesados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASOS -->
+    <section id="casos" class="cases section alt">
+      <div class="container">
+        <h2 class="reveal">Casos de éxito</h2>
+        <div class="cases-grid">
+          <div class="case card reveal">
+            <h3>+58% reservas en 60 días</h3>
+            <p class="muted">Mix Meta + Google, landing optimizada y WhatsApp automation.</p>
+          </div>
+          <div class="case card reveal">
+            <h3>Top 3 en Google Maps</h3>
+            <p class="muted">SEO local + estrategia de reseñas para tratamientos faciales.</p>
+          </div>
+          <div class="case card reveal">
+            <h3>CPA -35% en Botox</h3>
+            <p class="muted">Creatividades probadas y audiencias lookalike.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="testimonials section">
+      <div class="container">
+        <h2 class="reveal">Lo que dicen nuestros clientes</h2>
+        <div class="carousel reveal" role="region" aria-label="Testimonios">
+          <div class="carousel-track">
+            <figure class="t-card">
+              <blockquote>“Agenda llena en 2 meses. Comunicación impecable y reportes claros.”</blockquote>
+              <figcaption>— Dra. Laura Méndez · Clínica LUMÉ (Madrid)</figcaption>
+            </figure>
+            <figure class="t-card">
+              <blockquote>“Bajamos el coste por cita un 30% y escalamos sin perder calidad.”</blockquote>
+              <figcaption>— Alberto Ruiz · Bellezza Centro</figcaption>
+            </figure>
+            <figure class="t-card">
+              <blockquote>“Por fin una agencia que entiende el sector médico estético.”</blockquote>
+              <figcaption>— Dra. Sofía Paredes · Aurea Clinic</figcaption>
+            </figure>
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="carousel-btn next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact section alt">
+      <div class="container grid-2">
+        <div class="reveal">
+          <h2>Hablemos de tu clínica</h2>
+          <p class="muted">Agenda una llamada o envíanos un mensaje. Respondemos en 24–48h.</p>
+          <div class="contact-actions">
+            <a class="btn lg" href="tel:+34603500843"><i class="fa-solid fa-phone"></i> Llamar Ahora</a>
+            <a class="btn lg ghost" href="mailto:gersonbrizuela8@gmail.com?subject=Consulta%20Brizon%20Agency"><i class="fa-solid fa-envelope"></i> Enviar Email</a>
+            <a class="btn lg ghost" target="_blank" rel="noopener" href="https://wa.me/34603500843?text=Hola%20Brizon%20Agency,%20quiero%20más%20información"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+        <form class="card contact-form reveal" id="contact-form">
+          <label>Nombre
+            <input name="nombre" required placeholder="Tu nombre">
+          </label>
+          <label>Email
+            <input type="email" name="email" required placeholder="tu@email.com">
+          </label>
+          <label>Teléfono
+            <input type="tel" name="telefono" required placeholder="+34 ...">
+          </label>
+          <label>Mensaje
+            <textarea name="mensaje" rows="4" required placeholder="Cuéntanos qué necesitas"></textarea>
+          </label>
+          <button class="btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+          <p class="form-note muted">Al enviar aceptas ser contactado por Brizon Agency. No compartimos tus datos.</p>
+          <div class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <img class="footer-watermark" src="assets/logo.png" alt="Marca de agua Brizon Agency">
+    <div class="container foot">
+      <div class="foot-brand">
+        <img src="assets/logo.png" alt="Logo Brizon Agency" class="logo small">
+        <span>Brizon Agency · Marketing para clínicas de estética</span>
+      </div>
+      <div class="foot-links">
+        <a href="mailto:gersonbrizuela8@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+34603500843"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://wa.me/34603500843" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#inicio"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+      <div class="copy">© <span id="year"></span> Brizon Agency · Hecho con ♥</div>
     </div>
-  </section>
-
-  <!-- Casos -->
-  <section id="casos" class="section">
-    <h2>Casos de Éxito</h2>
-    <p>Hemos ayudado a clínicas estéticas a multiplicar sus consultas y fidelizar pacientes.</p>
-  </section>
-
-  <!-- Testimonios -->
-  <section id="testimonios" class="section testimonials">
-    <h2>Lo que dicen nuestros clientes</h2>
-    <blockquote>“Gracias a Brizon Agency, nuestra clínica duplicó las reservas en menos de 3 meses.” – Clínica Estética Bella</blockquote>
-    <blockquote>“El equipo es increíble, entienden el sector y saben cómo atraer pacientes.” – Centro Estético Glow</blockquote>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto" class="section contact">
-    <h2>Contacto</h2>
-    <p>📧 gersonbrizuela8@gmail.com</p>
-    <p>📞 +34 603 500 843</p>
-
-    <!-- Botón de llamada -->
-    <a href="tel:+34603500843" class="btn call-btn">📞 Llamar Ahora</a>
-
-    <!-- Formulario de contacto -->
-    <form action="https://formspree.io/f/mnqeqzwz" method="POST" class="contact-form">
-      <input type="text" name="nombre" placeholder="Tu Nombre" required>
-      <input type="email" name="email" placeholder="Tu Email" required>
-      <input type="tel" name="telefono" placeholder="Tu Teléfono" required>
-      <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
-      <button type="submit" class="btn">Enviar Mensaje</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <img src="assets/logo.png" alt="Brizon Agency Logo" class="logo-footer">
-    <p>© 2025 Brizon Agency - Todos los derechos reservados</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

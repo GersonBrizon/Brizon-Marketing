@@ -113,3 +113,58 @@ body {
   height: 30px;
   margin-bottom: 10px;
 }
+
+/* Call button */
+.call-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.1em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.call-btn:hover {
+  background: #218838;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+
+/* Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 30px auto;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background: #1cb5e0;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #000851;
+  color: white;
+}
